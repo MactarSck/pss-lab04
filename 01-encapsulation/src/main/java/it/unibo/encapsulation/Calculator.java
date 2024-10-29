@@ -2,12 +2,22 @@ package it.unibo.encapsulation;
 
 public class Calculator {
 
-    int operationsPerformed;
-    double lastResult;
+    private  int operationsPerformed;
+    private double lastResult;
 
     public Calculator() {
         this.operationsPerformed = 0;
         this.lastResult = 0;
+    }
+
+    private int getOperationsPerformed()
+    {
+          return operationsPerformed;
+    }
+
+    private double getlastResult()
+    {
+        return lastResult;
     }
 
     private double updateStatus(final double val) {
