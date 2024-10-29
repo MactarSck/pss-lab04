@@ -1,6 +1,6 @@
 package it.unibo;
 
-public class Kangaroo {
+public class Kangaroo implements  Diet{
 
     private double weight;
 

@@ -1,7 +1,7 @@
 package it.unibo;
 
 
-public class SiameseCat {
+public class SiameseCat implements Diet {
 
     private double weight;
 

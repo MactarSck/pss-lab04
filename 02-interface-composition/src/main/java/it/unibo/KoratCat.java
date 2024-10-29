@@ -1,6 +1,6 @@
 package it.unibo;
 
-public class KoratCat {
+public class KoratCat implements Diet, Animal{
 
     private double weight;
 
@@ -8,6 +8,16 @@ public class KoratCat {
     {
         this.weight = weight;
 
+    }
+
+    public boolean canEatVegetables()
+    {
+        return true;
+    }
+
+    public boolean canEat(Animal a){
+
+        return true;
     }
     
 }
