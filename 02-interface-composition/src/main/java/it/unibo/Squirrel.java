@@ -18,7 +18,13 @@ public class Squirrel implements Diet, Animal {
 
     public boolean canEatVegetables()
     {
-        return true;
+        if(this.herbivore == true)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public boolean canEat(Animal a){
