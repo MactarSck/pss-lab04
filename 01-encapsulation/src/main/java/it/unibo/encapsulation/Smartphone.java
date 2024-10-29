@@ -38,6 +38,51 @@ public class Smartphone {
         this.hasNFC = hasNFC;
     }
 
+
+    public int getcpuCount() {
+        return cpuCount;
+    }
+
+    public int getram()
+    {
+        return ram;
+
+    }
+
+    public int getsdzSize()
+    {
+        return sdSize;
+    }
+    
+    public String getbrand()
+    {
+        return brand;
+    }
+
+    public String getmodel()
+    {
+        return model;
+    }
+
+    public boolean getHasGPS()
+    {
+        return hasGPS;
+    }
+
+    public boolean getHas3G()
+    {
+        return has3G;
+    }
+
+    public boolean gethasNFC()
+    {
+        return hasNFC;
+    }
+        
+    
+
+    
+
     public Smartphone(final String brand, final String model) {
         this(brand, model, DEF_SD_SIZE);
     }
@@ -55,13 +100,13 @@ public class Smartphone {
     }
 
     public void printStringRep() {
-        System.out.println("n CPU(s): " + cpuCount);
-        System.out.println("RAM amount: " + ram);
-        System.out.println("SD size: " + sdSize);
-        System.out.println("brand: " + brand);
-        System.out.println("model: " + model);
-        System.out.println("hasGPS: " + hasGPS);
-        System.out.println("has3G: " + has3G);
-        System.out.println("hasNFC: " + hasNFC + "\n");
+        System.out.println("n CPU(s): " + this.cpuCount);
+        System.out.println("RAM amount: " + this.ram);
+        System.out.println("SD size: " + this.sdSize);
+        System.out.println("brand: " + this.brand);
+        System.out.println("model: " + this.model);
+        System.out.println("hasGPS: " + this.hasGPS);
+        System.out.println("has3G: " + this.has3G);
+        System.out.println("hasNFC: " + this.hasNFC + "\n");
     }
 }
