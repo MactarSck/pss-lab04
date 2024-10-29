@@ -5,15 +5,15 @@ public class SiameseCat implements Diet, Animal {
 
     private double weight;
     private boolean herbivore;
-    private boolean Omnivore;
-    private boolean Carnovore;
+    private boolean omnivore;
+    private boolean carnovore;
 
     public SiameseCat(double weight)
     {
         this.weight = weight;
         this.herbivore= false;
-        this.Omnivore = false;
-        this.Carnovore = true;
+        this.omnivore = false;
+        this.carnovore = true;
         
     }
     
@@ -30,6 +30,13 @@ public class SiameseCat implements Diet, Animal {
 
     public boolean canEat(Animal a){
 
-        return true;
+        if(this.carnovore == true)
+        {
+            return true;
+        }
+        else{
+            return false;
+
+        }
     }
 }
