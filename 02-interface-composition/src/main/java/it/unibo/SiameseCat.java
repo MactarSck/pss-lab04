@@ -1,7 +1,7 @@
 package it.unibo;
 
 
-public class SiameseCat implements Diet {
+public class SiameseCat implements Diet, Animal {
 
     private double weight;
 
@@ -11,4 +11,13 @@ public class SiameseCat implements Diet {
         
     }
     
+    public boolean canEatVegetables()
+    {
+        return true;
+    }
+
+    public boolean canEat(Animal a){
+
+        return true;
+    }
 }
