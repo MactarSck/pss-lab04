@@ -2,9 +2,12 @@ package it.unibo;
 
 public class KoratCat {
 
-    public KoratCat()
+    private double weight;
+
+    public KoratCat(double weight)
     {
-        
+        this.weight = weight;
+
     }
     
 }

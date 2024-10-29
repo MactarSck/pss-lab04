@@ -2,8 +2,11 @@ package it.unibo;
 
 public class Kangaroo {
 
-    public Kangaroo()
+    private double weight;
+
+    public Kangaroo(double weight)
     {
+      this.weight = weight;
         
     }
     
